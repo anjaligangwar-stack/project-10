@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <section id="faq">
+    <div class="faq-heading">
+        <h3>FAQs</h3>
+        <p>Improve conversion rates ,included copy-write and beautiful designs 
+          <br> -just a few things our clints love !</p>
+    </div>
+    <div class="faq-content">
+      <div class="faq-box-container">
+
+        <div class="faq-box">
+          <div class="faq-box-question active">
+            <h4>What is a "Credit"?</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer" style="max-height: 100px;">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis,Lorem ipsum dolor sit amet 
+              consectetur adipisicing elit. Non, voluptatem. magnam quod doloribus sunt.</p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>What does "Web Development" mean ?<h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?</p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>What is a "user</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus sunt.
+               Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?
+            </p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>What is a hosting in a website</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus sunt.
+               Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?
+            </p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>Do I have to connect ad accounts to use Website?</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus sunt.
+               Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?
+            </p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>What do you mean by frontend</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus sunt.
+               Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?
+            </p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>What is javascript</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus sunt.
+               Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?
+            </p>
+          </div>
+        </div>
+
+        
+        <div class="faq-box">
+          <div class="faq-box-question">
+            <h4>What do you mean by css</h4>
+            <span class="faq-box-icon"></span>
+          </div>
+          <div class="faq-box-answer">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio porro officiis, magnam quod doloribus sunt.
+               Optio porro officiis, magnam quod doloribus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, modi?
+            </p>
+          </div>
+        </div>
+ </div>
+      
+    </div>
+  </section>
+  
+  <script>
+    var faq = document.getElementsByClassName("faq-box-question");
+    var i;
+    for(i = 0; i<faq.length; i++){
+      faq[i].addEventListener("click",function(){
+        this.classList.toggle("active");
+
+        var body = this.nextElementSibling;
+        if(body.style.maxHeight === "100px"){
+          body.style.maxHeight = "0px"
+        }
+        else{
+            body.style.maxHeight = "100px"
+        }
+      })
+    }
+  </script>
+</body>
+</html>
